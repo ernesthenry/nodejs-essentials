@@ -6,5 +6,6 @@ colorData.colorList.forEach(c =>{
         if(err){
             throw err;
         }
+        console.log("File appended")
     }) // this creates file if it doesn't exist and append to if it arleady exists
 })
