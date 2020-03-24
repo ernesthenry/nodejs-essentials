@@ -6,9 +6,8 @@ fs.readdirSync('./assets', (err, files) =>{    // this function executes asynchr
     if(err){
         throw err;
     }
-
-    console.log('complete');
-    console.log(files)
+  console.log('complete');
+  console.log(files)
 
 }) 
 
