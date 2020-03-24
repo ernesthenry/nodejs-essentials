@@ -1,5 +1,7 @@
 const fs = require("fs")
 
-const text = fs.readFileSync("./assets/Readme.md", "UTF-8")
+fs.readFile("./assets/Readme.md", "UTF-8", (err, text) =>{
+    console.log("File contents read")
+    console.log(text)
+})
 
-console.log(text)
