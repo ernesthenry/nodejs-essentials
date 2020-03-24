@@ -7,10 +7,14 @@ const questions = [
 ]
 
 
+const answerEvents = collectAnswers(questions);
 
-collectAnswers(questions, answers =>{
+answerEvents.on("answer", answer => console.log(`Question answered:  ${answer}`))
+
+answerEvents.on("complete",  answers =>{
     console.log('Thank you for your answers');
     console.log(answers);
-    process.exit();
 })
+
+answerEvents.on("complete", () => process.exit());
 
