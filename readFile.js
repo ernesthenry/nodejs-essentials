@@ -1,7 +1,7 @@
 const fs = require("fs")
 
-fs.readFile("./assets/Readme.md", "UTF-8", (err, text) =>{
+fs.readFile("./assets/alex.jpg",  (err, img) =>{
     console.log("File contents read")
-    console.log(text)
+    console.log(img)
 })
 
