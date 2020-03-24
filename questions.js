@@ -7,7 +7,6 @@ const questions = [
 ]
 
 
-
 const answerEvents = collectAnswers(questions);
 
 answerEvents.on("answer", answer => console.log(`Question answered:  ${answer}`))
@@ -18,5 +17,4 @@ answerEvents.on("complete",  answers =>{
 })
 
 answerEvents.on("complete", () => process.exit());
-
 

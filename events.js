@@ -17,3 +17,4 @@ process.stdin.on("data", data =>{
     }
     emitter.emit("customEvent", input, "terminal")
 }) 
+
